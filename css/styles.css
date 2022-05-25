@@ -1,5 +1,66 @@
+/*FOOTER*/
+footer {
+  background-color: #DAE5D0;
+  color: #000;
+  padding: 10px; }
+  footer .containerFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 10px; }
+    footer .containerFooter ul {
+      list-style: none; }
+      footer .containerFooter ul h4 {
+        letter-spacing: 2px;
+        padding: 10px 10px 10px 0; }
+      footer .containerFooter ul li {
+        margin: 8px; }
+        footer .containerFooter ul li a {
+          text-align: center;
+          margin: 0 auto;
+          text-decoration: none; }
+        footer .containerFooter ul li span {
+          padding-left: 10px; }
+        footer .containerFooter ul li img {
+          width: 10px;
+          height: 10px;
+          padding: 5px;
+          border-radius: 10px; }
+    footer .containerFooter .fotoContactanos {
+      background-color: #fff; }
+      footer .containerFooter .fotoContactanos:hover {
+        background-color: #A0BCC2; }
+    footer .containerFooter .copyright {
+      padding-top: 40px; }
+      footer .containerFooter .copyright p {
+        text-align: center; }
+    footer .containerFooter .by {
+      padding-top: 15px;
+      font-weight: bold !important; }
+
+/* VISTA MOBILE */
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+  /*SECCION INFO*/
+  #infoCompra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px; }
+    #infoCompra .info__container {
+      text-align: center;
+      margin: 33px; }
+      #infoCompra .info__container h3 {
+        font-weight: 600;
+        font-size: 22px; } }
+
 * {
-  font-family: 'Teko', sans-serif; }
+  font-family: 'Teko', sans-serif;
+  margin: 0;
+  padding: 0; }
 
 body {
-  background-color: aliceblue; }
+  background-color: #FEFBE7; }
+
+/* VISTA MOBILE */
+/* VISTA DESKTOP */

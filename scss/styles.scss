@@ -1,7 +1,23 @@
+@import "variables", "header", "footer", "infoCompra";
+
 * {
     font-family: 'Teko', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: aliceblue;
+    background-color: $color3;
+}
+
+/* VISTA MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+}
+
+
+
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+
 }

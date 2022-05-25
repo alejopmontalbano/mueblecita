@@ -1,0 +1,65 @@
+/*FOOTER*/
+
+footer {
+    background-color: $colorSecundario;
+    color: #000;
+    padding: 10px;
+
+    .containerFooter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 10px;
+
+        ul {
+            list-style: none;
+
+            h4 {
+                letter-spacing: 2px;
+                padding: 10px 10px 10px 0;
+            }
+
+            li {
+                margin: 8px;
+
+                a {
+                    text-align: center;
+                    margin: 0 auto;
+                    text-decoration: none;
+                }
+
+                span {
+                    padding-left: 10px;
+                }
+
+                img {
+                    width: 10px;
+                    height: 10px;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .fotoContactanos {
+            background-color: #fff;
+
+                &:hover {
+                    background-color: $colorPrincipal;
+                }
+        }
+
+        .copyright {
+            padding-top: 40px;
+
+            p {
+                text-align: center;
+            }
+        }
+
+        .by {
+            padding-top: 15px;
+            font-weight: bold !important;
+        }
+    }
+}
