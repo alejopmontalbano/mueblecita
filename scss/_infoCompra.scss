@@ -1,6 +1,23 @@
 /* VISTA MOBILE */
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+    /*SECCION INFO*/
 
+    #infoCompra {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 50px;
+
+        .info__container {
+            text-align: center;
+            margin: 30px;
+
+            h3 {
+                font-weight: 600;
+                font-size: 19px;
+            }
+        }
+    }
 }
 
 /* VISTA DESKTOP */

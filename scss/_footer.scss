@@ -1,81 +1,169 @@
 /*FOOTER*/
 
-footer {
-    background-color: $colorPrincipal;
-    color: #000;
-    padding: 10px;
+/* VISTA MOBILE */ 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
 
-    .containerFooter {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding-bottom: 10px;
+    footer {
+        background-color: $colorPrincipal;
+        color: #000;
+        padding: 10px;
 
-        ul {
-            list-style: none;
+        .containerFooter {
+            display: flex;
+            flex-flow: column wrap;
+            padding-bottom: 10px;
 
-            h4 {
-                font-size: 22px;
-                letter-spacing: 2px;
-                padding: 10px 10px 10px 0;
-            }
+            ul {
+                list-style: none;
 
-            li {
-                margin: 8px;
-
-                &:hover {
-                    color: $colorSecundario;
+                h4 {
+                    letter-spacing: 2px;
+                    padding: 10px 10px 10px 0;
                 }
 
-                a {
-                    text-align: center;
-                    margin: 0 auto;
-                    text-decoration: none;
-                }
-
-                span {
-                    color: #000;
-                    padding-left: 10px;
+                li {
+                    margin: 8px;
 
                     &:hover {
                         color: $colorSecundario;
                     }
+
+                    a {
+                        text-align: center;
+                        margin: 0 auto;
+                        text-decoration: none;
+                    }
+
+                    span {
+                        color: #000;
+                        padding-left: 10px;
+
+                        &:hover {
+                            color: $colorSecundario;
+                        }
+                    }
+
+                    img {
+                        width: $ancho-redes-fotos;
+                        height: $alto-redes-fotos;
+                        padding: 5px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            .logoRed {
+
+                &:hover {
+                    background-color: $colorSecundario;
+                }
+            }
+
+            .fotoContactanos {
+
+                &:hover {
+                    background-color: $colorSecundario;
+                }
+            }
+
+            .copyright {
+                padding-top: 40px;
+
+                p {
+                    text-align: center;
+                }
+            }
+
+            .by {
+                padding-top: 15px;
+                font-weight: bold !important;
+            }
+        }
+    }
+}
+
+
+
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+
+    footer {
+        background-color: $colorPrincipal;
+        color: #000;
+        padding: 10px;
+
+        .containerFooter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-bottom: 10px;
+
+            ul {
+                list-style: none;
+
+                h4 {
+                    font-size: 22px;
+                    letter-spacing: 2px;
+                    padding: 10px 10px 10px 0;
                 }
 
-                img {
-                    width: $ancho-redes-fotos;
-                    height: $alto-redes-fotos;
-                    padding: 5px;
-                    border-radius: 10px;
+                li {
+                    margin: 8px;
+
+                    &:hover {
+                        color: $colorSecundario;
+                    }
+
+                    a {
+                        text-align: center;
+                        margin: 0 auto;
+                        text-decoration: none;
+                    }
+
+                    span {
+                        color: #000;
+                        padding-left: 10px;
+
+                        &:hover {
+                            color: $colorSecundario;
+                        }
+                    }
+
+                    img {
+                        width: $ancho-redes-fotos;
+                        height: $alto-redes-fotos;
+                        padding: 5px;
+                        border-radius: 10px;
+                    }
                 }
             }
-        }
 
-        .logoRed {
+            .logoRed {
 
-            &:hover {
-                background-color: $colorSecundario;
+                &:hover {
+                    background-color: $colorSecundario;
+                }
             }
-        }
 
-        .fotoContactanos {
+            .fotoContactanos {
 
-            &:hover {
-                background-color: $colorSecundario;
+                &:hover {
+                    background-color: $colorSecundario;
+                }
             }
-        }
 
-        .copyright {
-            padding-top: 40px;
+            .copyright {
+                padding-top: 40px;
 
-            p {
-                text-align: center;
+                p {
+                    text-align: center;
+                }
             }
-        }
 
-        .by {
-            padding-top: 15px;
-            font-weight: bold !important;
+            .by {
+                padding-top: 15px;
+                font-weight: bold !important;
+            }
         }
     }
 }

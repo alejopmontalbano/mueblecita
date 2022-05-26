@@ -1,4 +1,33 @@
 /* VISTA MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  /* SECCION DE NAVEGACION Y ENCABEZADO*/
+  .navbar {
+    background-color: #A0BCC2;
+    height: 80px; }
+  .navbar-brand {
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding: 0 250px 0 100px; }
+    .navbar-brand:hover {
+      font-weight: 600;
+      color: #A0BCC2; }
+  .link-color {
+    color: #000 !important;
+    font-size: 17px; }
+    .link-color:hover {
+      font-weight: 600;
+      color: #A0BCC2; }
+  .dropdown-menu {
+    background-color: #A0BCC2;
+    color: #000; }
+    .dropdown-menu:hover {
+      color: #000 !important; }
+    .dropdown-menu .dropdown-item:hover {
+      font-weight: 600; }
+  .redSocialNav {
+    visibility: hidden; } }
+
 /* VISTA DESKTOP */
 @media only screen and (min-width: 1025px) {
   /* SECCION DE NAVEGACION Y ENCABEZADO*/
@@ -41,52 +70,113 @@
           background-color: #DAE5D0; } }
 
 /*FOOTER*/
-footer {
-  background-color: #A0BCC2;
-  color: #000;
-  padding: 10px; }
-  footer .containerFooter {
+/* VISTA MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  footer {
+    background-color: #A0BCC2;
+    color: #000;
+    padding: 10px; }
+    footer .containerFooter {
+      display: flex;
+      flex-flow: column wrap;
+      padding-bottom: 10px; }
+      footer .containerFooter ul {
+        list-style: none; }
+        footer .containerFooter ul h4 {
+          letter-spacing: 2px;
+          padding: 10px 10px 10px 0; }
+        footer .containerFooter ul li {
+          margin: 8px; }
+          footer .containerFooter ul li:hover {
+            color: #DAE5D0; }
+          footer .containerFooter ul li a {
+            text-align: center;
+            margin: 0 auto;
+            text-decoration: none; }
+          footer .containerFooter ul li span {
+            color: #000;
+            padding-left: 10px; }
+            footer .containerFooter ul li span:hover {
+              color: #DAE5D0; }
+          footer .containerFooter ul li img {
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+            border-radius: 10px; }
+      footer .containerFooter .logoRed:hover {
+        background-color: #DAE5D0; }
+      footer .containerFooter .fotoContactanos:hover {
+        background-color: #DAE5D0; }
+      footer .containerFooter .copyright {
+        padding-top: 40px; }
+        footer .containerFooter .copyright p {
+          text-align: center; }
+      footer .containerFooter .by {
+        padding-top: 15px;
+        font-weight: bold !important; } }
+
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+  footer {
+    background-color: #A0BCC2;
+    color: #000;
+    padding: 10px; }
+    footer .containerFooter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding-bottom: 10px; }
+      footer .containerFooter ul {
+        list-style: none; }
+        footer .containerFooter ul h4 {
+          font-size: 22px;
+          letter-spacing: 2px;
+          padding: 10px 10px 10px 0; }
+        footer .containerFooter ul li {
+          margin: 8px; }
+          footer .containerFooter ul li:hover {
+            color: #DAE5D0; }
+          footer .containerFooter ul li a {
+            text-align: center;
+            margin: 0 auto;
+            text-decoration: none; }
+          footer .containerFooter ul li span {
+            color: #000;
+            padding-left: 10px; }
+            footer .containerFooter ul li span:hover {
+              color: #DAE5D0; }
+          footer .containerFooter ul li img {
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+            border-radius: 10px; }
+      footer .containerFooter .logoRed:hover {
+        background-color: #DAE5D0; }
+      footer .containerFooter .fotoContactanos:hover {
+        background-color: #DAE5D0; }
+      footer .containerFooter .copyright {
+        padding-top: 40px; }
+        footer .containerFooter .copyright p {
+          text-align: center; }
+      footer .containerFooter .by {
+        padding-top: 15px;
+        font-weight: bold !important; } }
+
+/* VISTA MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  /*SECCION INFO*/
+  #infoCompra {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: 10px; }
-    footer .containerFooter ul {
-      list-style: none; }
-      footer .containerFooter ul h4 {
-        font-size: 22px;
-        letter-spacing: 2px;
-        padding: 10px 10px 10px 0; }
-      footer .containerFooter ul li {
-        margin: 8px; }
-        footer .containerFooter ul li:hover {
-          color: #DAE5D0; }
-        footer .containerFooter ul li a {
-          text-align: center;
-          margin: 0 auto;
-          text-decoration: none; }
-        footer .containerFooter ul li span {
-          color: #000;
-          padding-left: 10px; }
-          footer .containerFooter ul li span:hover {
-            color: #DAE5D0; }
-        footer .containerFooter ul li img {
-          width: 30px;
-          height: 30px;
-          padding: 5px;
-          border-radius: 10px; }
-    footer .containerFooter .logoRed:hover {
-      background-color: #DAE5D0; }
-    footer .containerFooter .fotoContactanos:hover {
-      background-color: #DAE5D0; }
-    footer .containerFooter .copyright {
-      padding-top: 40px; }
-      footer .containerFooter .copyright p {
-        text-align: center; }
-    footer .containerFooter .by {
-      padding-top: 15px;
-      font-weight: bold !important; }
+    margin: 50px; }
+    #infoCompra .info__container {
+      text-align: center;
+      margin: 30px; }
+      #infoCompra .info__container h3 {
+        font-weight: 600;
+        font-size: 19px; } }
 
-/* VISTA MOBILE */
 /* VISTA DESKTOP */
 @media only screen and (min-width: 1025px) {
   /*SECCION INFO*/
@@ -127,12 +217,12 @@ body {
     #combos .productos__container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-evenly;
       margin: 40px; }
       #combos .productos__container .container__productos {
         border: 2px solid #A0BCC2;
         border-radius: 10px;
-        margin: 30px; }
+        margin: 40px; }
         #combos .productos__container .container__productos img {
           border-radius: 10px; }
         #combos .productos__container .container__productos .foto-producto {
