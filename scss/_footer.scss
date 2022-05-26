@@ -1,7 +1,7 @@
 /*FOOTER*/
 
 footer {
-    background-color: $colorSecundario;
+    background-color: $colorPrincipal;
     color: #000;
     padding: 10px;
 
@@ -15,12 +15,17 @@ footer {
             list-style: none;
 
             h4 {
+                font-size: 22px;
                 letter-spacing: 2px;
                 padding: 10px 10px 10px 0;
             }
 
             li {
                 margin: 8px;
+
+                &:hover {
+                    color: $colorSecundario;
+                }
 
                 a {
                     text-align: center;
@@ -29,24 +34,35 @@ footer {
                 }
 
                 span {
+                    color: #000;
                     padding-left: 10px;
+
+                    &:hover {
+                        color: $colorSecundario;
+                    }
                 }
 
                 img {
-                    width: 10px;
-                    height: 10px;
+                    width: $ancho-redes-fotos;
+                    height: $alto-redes-fotos;
                     padding: 5px;
                     border-radius: 10px;
                 }
             }
         }
 
-        .fotoContactanos {
-            background-color: #fff;
+        .logoRed {
 
-                &:hover {
-                    background-color: $colorPrincipal;
-                }
+            &:hover {
+                background-color: $colorSecundario;
+            }
+        }
+
+        .fotoContactanos {
+
+            &:hover {
+                background-color: $colorSecundario;
+            }
         }
 
         .copyright {

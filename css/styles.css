@@ -1,6 +1,48 @@
+/* VISTA MOBILE */
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+  /* SECCION DE NAVEGACION Y ENCABEZADO*/
+  .navbar {
+    background-color: #A0BCC2;
+    height: 80px; }
+  .navbar-brand {
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding: 0 250px 0 100px; }
+    .navbar-brand:hover {
+      font-weight: 600;
+      color: #A0BCC2; }
+  .link-color {
+    color: #000 !important;
+    font-size: 17px; }
+    .link-color:hover {
+      font-weight: 600;
+      color: #A0BCC2; }
+  .dropdown-menu {
+    background-color: #A0BCC2;
+    color: #000; }
+    .dropdown-menu:hover {
+      color: #000 !important; }
+    .dropdown-menu .dropdown-item:hover {
+      font-weight: 600; }
+  .redSocialNav ul {
+    list-style: none;
+    margin: auto 0; }
+    .redSocialNav ul .redesNav {
+      display: inline-block; }
+      .redSocialNav ul .redesNav img {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        margin: 0 10px;
+        border-radius: 10px; }
+        .redSocialNav ul .redesNav img:hover {
+          background-color: #DAE5D0; } }
+
 /*FOOTER*/
 footer {
-  background-color: #DAE5D0;
+  background-color: #A0BCC2;
   color: #000;
   padding: 10px; }
   footer .containerFooter {
@@ -11,25 +53,31 @@ footer {
     footer .containerFooter ul {
       list-style: none; }
       footer .containerFooter ul h4 {
+        font-size: 22px;
         letter-spacing: 2px;
         padding: 10px 10px 10px 0; }
       footer .containerFooter ul li {
         margin: 8px; }
+        footer .containerFooter ul li:hover {
+          color: #DAE5D0; }
         footer .containerFooter ul li a {
           text-align: center;
           margin: 0 auto;
           text-decoration: none; }
         footer .containerFooter ul li span {
+          color: #000;
           padding-left: 10px; }
+          footer .containerFooter ul li span:hover {
+            color: #DAE5D0; }
         footer .containerFooter ul li img {
-          width: 10px;
-          height: 10px;
+          width: 30px;
+          height: 30px;
           padding: 5px;
           border-radius: 10px; }
-    footer .containerFooter .fotoContactanos {
-      background-color: #fff; }
-      footer .containerFooter .fotoContactanos:hover {
-        background-color: #A0BCC2; }
+    footer .containerFooter .logoRed:hover {
+      background-color: #DAE5D0; }
+    footer .containerFooter .fotoContactanos:hover {
+      background-color: #DAE5D0; }
     footer .containerFooter .copyright {
       padding-top: 40px; }
       footer .containerFooter .copyright p {
@@ -55,12 +103,59 @@ footer {
         font-size: 22px; } }
 
 * {
-  font-family: 'Teko', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0; }
 
 body {
-  background-color: #FEFBE7; }
+  background-color: #fff; }
 
 /* VISTA MOBILE */
 /* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+  #combos {
+    margin-top: 80px;
+    padding: 30px; }
+    #combos .productos__titulo {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+      transition: letter-spacing 1.5s; }
+      #combos .productos__titulo:hover {
+        letter-spacing: 6px; }
+    #combos .productos__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 40px; }
+      #combos .productos__container .container__productos {
+        border: 2px solid #A0BCC2;
+        border-radius: 10px;
+        margin: 30px; }
+        #combos .productos__container .container__productos img {
+          border-radius: 10px; }
+        #combos .productos__container .container__productos .foto-producto {
+          width: 395px;
+          height: 315px; }
+        #combos .productos__container .container__productos:hover {
+          box-shadow: 0px 0px 25px 9px #A0BCC2; }
+        #combos .productos__container .container__productos .descripcionProductos {
+          margin: 20px; }
+          #combos .productos__container .container__productos .descripcionProductos .nombreProducto {
+            font-weight: 600; }
+          #combos .productos__container .container__productos .descripcionProductos .detalleProducto {
+            font-style: italic; }
+          #combos .productos__container .container__productos .descripcionProductos .precioProducto {
+            font-weight: 600;
+            margin-bottom: 30px; }
+          #combos .productos__container .container__productos .descripcionProductos a {
+            text-decoration: none;
+            color: #000;
+            border: 1px solid #A0BCC2;
+            padding: 10px;
+            border-radius: 10px; }
+            #combos .productos__container .container__productos .descripcionProductos a:hover {
+              font-weight: 600;
+              background-color: #A0BCC2;
+              box-shadow: 0px 0px 25px 9px #A0BCC2; } }

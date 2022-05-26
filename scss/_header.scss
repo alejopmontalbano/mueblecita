@@ -1,0 +1,76 @@
+/* VISTA MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 767px) {}
+
+
+
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+
+    /* SECCION DE NAVEGACION Y ENCABEZADO*/
+
+    .navbar {
+        background-color: $colorPrincipal;
+        height: 80px;
+    }
+
+    .navbar-brand {
+        text-decoration: none;
+        font-size: 30px;
+        letter-spacing: 2px;
+        padding: 0 250px 0 100px;
+
+        &:hover {
+            font-weight: 600;
+            color: $colorPrincipal;
+        }
+    }
+
+    .link-color {
+        color: #000 !important;
+        font-size: 17px;
+
+        &:hover {
+            font-weight: 600;
+            color: $colorPrincipal;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: $colorPrincipal;
+        color: #000;
+
+        &:hover {
+            color: #000 !important;
+        }
+
+        .dropdown-item {
+            &:hover {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .redSocialNav {
+        
+        ul {
+            list-style: none;
+            margin: auto 0;
+
+            .redesNav {
+                display: inline-block;
+
+                img {
+                    width: $ancho-redes-fotos;
+                    height: $alto-redes-fotos;
+                    padding: 5px;
+                    margin: 0 10px;
+                    border-radius: 10px;
+
+                    &:hover {
+                        background-color: $colorSecundario;
+                    }
+                }
+            }
+        }
+    }
+}
