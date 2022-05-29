@@ -6,15 +6,13 @@
     height: 80px; }
   .navbar-brand {
     text-decoration: none;
-    font-size: 30px;
-    letter-spacing: 2px;
-    padding: 0 250px 0 100px; }
+    font-size: 23px;
+    letter-spacing: 2px; }
     .navbar-brand:hover {
       font-weight: 600;
       color: #A0BCC2; }
   .link-color {
-    color: #000 !important;
-    font-size: 17px; }
+    color: #000 !important; }
     .link-color:hover {
       font-weight: 600;
       color: #A0BCC2; }
@@ -201,51 +199,116 @@ body {
   background-color: #fff; }
 
 /* VISTA MOBILE */
-/* VISTA DESKTOP */
-@media only screen and (min-width: 1025px) {
-  #combos {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #productos {
     margin-top: 80px;
     padding: 30px; }
-    #combos .productos__titulo {
+    #productos .productos__titulo {
       text-align: center;
       font-size: 30px;
       margin-bottom: 20px;
       letter-spacing: 3px;
       transition: letter-spacing 1.5s; }
-      #combos .productos__titulo:hover {
+      #productos .productos__titulo:hover {
         letter-spacing: 6px; }
-    #combos .productos__container {
+    #productos .productos__container {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
       margin: 40px; }
-      #combos .productos__container .container__productos {
+      #productos .productos__container .container__productos {
         border: 2px solid #A0BCC2;
         border-radius: 10px;
         margin: 40px; }
-        #combos .productos__container .container__productos img {
+        #productos .productos__container .container__productos img {
           border-radius: 10px; }
-        #combos .productos__container .container__productos .foto-producto {
+        #productos .productos__container .container__productos .foto-producto {
           width: 395px;
           height: 315px; }
-        #combos .productos__container .container__productos:hover {
+        #productos .productos__container .container__productos:hover {
           box-shadow: 0px 0px 25px 9px #A0BCC2; }
-        #combos .productos__container .container__productos .descripcionProductos {
+        #productos .productos__container .container__productos .descripcionProductos {
           margin: 20px; }
-          #combos .productos__container .container__productos .descripcionProductos .nombreProducto {
+          #productos .productos__container .container__productos .descripcionProductos .nombreProducto {
             font-weight: 600; }
-          #combos .productos__container .container__productos .descripcionProductos .detalleProducto {
+          #productos .productos__container .container__productos .descripcionProductos .detalleProducto {
             font-style: italic; }
-          #combos .productos__container .container__productos .descripcionProductos .precioProducto {
+          #productos .productos__container .container__productos .descripcionProductos .precioProducto {
             font-weight: 600;
             margin-bottom: 30px; }
-          #combos .productos__container .container__productos .descripcionProductos a {
+          #productos .productos__container .container__productos .descripcionProductos a {
             text-decoration: none;
             color: #000;
             border: 1px solid #A0BCC2;
             padding: 10px;
             border-radius: 10px; }
-            #combos .productos__container .container__productos .descripcionProductos a:hover {
+            #productos .productos__container .container__productos .descripcionProductos a:hover {
               font-weight: 600;
               background-color: #A0BCC2;
               box-shadow: 0px 0px 25px 9px #A0BCC2; } }
+
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+  #productos {
+    margin-top: 80px;
+    padding: 30px; }
+    #productos .productos__titulo {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+      transition: letter-spacing 1.5s; }
+      #productos .productos__titulo:hover {
+        letter-spacing: 6px; }
+    #productos .productos__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 40px; }
+      #productos .productos__container .container__productos {
+        border: 2px solid #A0BCC2;
+        border-radius: 10px;
+        margin: 20px; }
+        #productos .productos__container .container__productos img {
+          border-radius: 10px; }
+        #productos .productos__container .container__productos .foto-producto {
+          width: 395px;
+          height: 315px; }
+        #productos .productos__container .container__productos:hover {
+          box-shadow: 0px 0px 25px 9px #A0BCC2; }
+        #productos .productos__container .container__productos .descripcionProductos .nombreProducto {
+          font-weight: 600;
+          margin-left: 20px; }
+        #productos .productos__container .container__productos .descripcionProductos .detalleProducto {
+          font-style: italic;
+          margin-left: 20px; }
+        #productos .productos__container .container__productos .descripcionProductos .accordion {
+          margin: 0 auto; }
+        #productos .productos__container .container__productos .descripcionProductos .accordion-button {
+          border-color: #A0BCC2 !important; }
+        #productos .productos__container .container__productos .descripcionProductos .listaDetalle {
+          padding-right: 40px;
+          font-style: italic; }
+        #productos .productos__container .container__productos .descripcionProductos li {
+          list-style: none; }
+        #productos .productos__container .container__productos .descripcionProductos .detalleBold {
+          font-weight: 600; }
+        #productos .productos__container .container__productos .descripcionProductos .containerPrecio {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: baseline;
+          margin: 20px; }
+        #productos .productos__container .container__productos .descripcionProductos .precioProducto {
+          font-weight: 600;
+          font-size: 19px; }
+        #productos .productos__container .container__productos .descripcionProductos a {
+          text-decoration: none;
+          color: #000;
+          border: 1px solid #A0BCC2;
+          padding: 10px;
+          border-radius: 10px; }
+          #productos .productos__container .container__productos .descripcionProductos a:hover {
+            font-weight: 600;
+            background-color: #A0BCC2;
+            box-shadow: 0px 0px 25px 9px #A0BCC2; } }

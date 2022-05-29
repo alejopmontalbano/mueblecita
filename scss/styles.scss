@@ -1,4 +1,4 @@
-@import "variables", "header", "footer", "infoCompra";
+@import "variables", "header", "footer", "infoCompra", "escritorios", "mesasRatonas";
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -11,14 +11,9 @@ body {
 }
 
 /* VISTA MOBILE */
-@media only screen and (min-width: 0px) and (max-width: 767px) {}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
 
-
-
-/* VISTA DESKTOP */
-@media only screen and (min-width: 1025px) {
-
-    #combos {
+    #productos {
         margin-top: 80px;
         padding: 30px;
 
@@ -72,6 +67,116 @@ body {
                     .precioProducto {
                         font-weight: 600;
                         margin-bottom: 30px;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                        border: 1px solid $colorPrincipal;
+                        padding: 10px;
+                        border-radius: 10px;
+
+                        &:hover {
+                            font-weight: 600;
+                            background-color: $colorPrincipal;
+                            box-shadow: $sombra-producto-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+
+    #productos {
+        margin-top: 80px;
+        padding: 30px;
+
+        .productos__titulo {
+            text-align: center;
+            font-size: $size-H2Desktop;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+            transition: letter-spacing 1.5s;
+
+            &:hover {
+                letter-spacing: 6px;
+            }
+        }
+
+        .productos__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 40px;
+
+            .container__productos {
+                border: 2px solid $colorPrincipal;
+                border-radius: 10px;
+                margin: 20px;
+
+                img {
+                    border-radius: 10px;
+                }
+
+                .foto-producto {
+                    width: 395px;
+                    height: 315px;
+                }
+
+                &:hover {
+                    box-shadow: $sombra-producto-hover;
+                }
+
+                .descripcionProductos {
+
+                    .nombreProducto {
+                        font-weight: 600;
+                        margin-left: 20px;
+                    }
+
+                    .detalleProducto {
+                        font-style: italic;
+                        margin-left: 20px;
+                    }
+
+                    .accordion {
+                        margin: 0 auto;
+                    }
+
+                    .accordion-button {
+                        border-color: $colorPrincipal !important;
+                    }
+
+                    .listaDetalle {
+                        padding-right: 40px;
+                        font-style: italic;
+                    }
+
+                    li {
+                        list-style: none;
+                    }
+
+                    .detalleBold {
+                        font-weight: 600;
+                    }
+
+                    .containerPrecio {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: baseline;
+                        margin: 20px;
+                    }
+
+                    .precioProducto {
+                        font-weight: 600;
+                        font-size: 19px;
                     }
 
                     a {
