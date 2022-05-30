@@ -271,6 +271,9 @@ body {
         margin: 20px; }
         #productos .productos__container .container__productos img {
           border-radius: 10px; }
+        #productos .productos__container .container__productos .imgCarousel {
+          width: 350px !important;
+          height: 420px; }
         #productos .productos__container .container__productos .foto-producto {
           width: 395px;
           height: 315px; }

@@ -1,4 +1,4 @@
-@import "variables", "header", "footer", "infoCompra", "escritorios", "mesasRatonas";
+@import "variables", "header", "footer", "infoCompra";
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -122,6 +122,11 @@ body {
 
                 img {
                     border-radius: 10px;
+                }
+
+                .imgCarousel {
+                    width: 350px !important;
+                    height: 420px;
                 }
 
                 .foto-producto {
