@@ -46,6 +46,18 @@ body {
                     border-radius: 10px;
                 }
 
+                .fotoGrande {
+                    width: $ancho-foto-producto-mobile2;
+                    height: $alto-foto-producto-mobile2;
+                    border-radius: 10px;
+                }
+
+                .fotoGrande-silla {
+                    width: $ancho-foto-producto-mobile-silla;
+                    height: $alto-foto-producto-mobile-silla;
+                    border-radius: 10px;
+                }
+
                 .foto-producto {
                     width: 395px;
                     height: 315px;
@@ -56,14 +68,15 @@ body {
                 }
 
                 .descripcionProductos {
-                    margin: 20px;
 
                     .nombreProducto {
                         font-weight: 600;
+                        margin-left: 20px;
                     }
 
                     .detalleProducto {
                         font-style: italic;
+                        margin-left: 20px;
                     }
 
                     .accordion {
@@ -75,11 +88,11 @@ body {
                     }
 
                     .listaDetalle {
-                        padding-right: 40px;
                         font-style: italic;
                     }
 
                     li {
+                        font-size: 13px;
                         list-style: none;
                     }
 
@@ -91,7 +104,7 @@ body {
                         display: flex;
                         justify-content: space-around;
                         align-items: baseline;
-                        margin: 20px;
+                        margin: 20px 0;
 
                         .precioProducto {
                             font-weight: 600;

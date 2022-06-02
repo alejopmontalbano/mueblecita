@@ -6,58 +6,63 @@
     .navbar {
         background-color: $colorPrincipal;
         height: 60px;
+    }
 
-        .navbar-brand {
-            text-decoration: none;
-            font-size: 23px;
-            letter-spacing: 2px;
+    .container-fluid {
+        height: 60px;
+    }
 
-            &:hover {
-                font-weight: 600;
-                color: $colorPrincipal;
-            }
-        }
+    .navbar-brand {
+        text-decoration: none;
+        font-size: 23px;
+        letter-spacing: 2px;
 
-        .nav-link {
-            padding-left: 10px;
-        }
-
-        .navbar-nav {
-            background-color: $colorPrincipal;
-            padding: 10px;
-        }
-
-        .link-color {
-            color: #000 !important;
-
-            &:hover {
-                font-weight: 600;
-                color: $colorPrincipal;
-            }
-        }
-
-        .dropdown-menu {
-            background-color: #fff;
-            color: #000;
-
-            &:hover {
-                color: #000 !important;
-            }
-
-            .dropdown-item {
-                padding-left: 30px;
-
-                &:hover {
-                    font-weight: 600;
-                    background-color: $colorPrincipal;
-                }
-            }
-        }
-
-        .redSocialNav {
-            visibility: hidden;
+        &:hover {
+            font-weight: 600;
+            color: $colorPrincipal;
         }
     }
+
+    .nav-link {
+        padding-left: 10px;
+    }
+
+    .navbar-nav {
+        background-color: $colorPrincipal;
+        padding: 10px;
+    }
+
+    .link-color {
+        color: #000 !important;
+
+        &:hover {
+            font-weight: 600;
+            color: $colorPrincipal;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: #fff;
+        color: #000;
+
+        &:hover {
+            color: #000 !important;
+        }
+
+        .dropdown-item {
+            padding-left: 30px;
+
+            &:hover {
+                font-weight: 600;
+                background-color: $colorPrincipal;
+            }
+        }
+    }
+
+    .redSocialNav {
+        visibility: hidden;
+    }
+
 }
 
 
