@@ -34,13 +34,11 @@ body {
             flex-wrap: wrap;
             flex-direction: column;
             align-content: center;
-            align-items: center;
-            margin: 20px;
 
             .container__productos {
                 border: 2px solid $colorPrincipal;
                 border-radius: 10px;
-                margin: 40px;
+                margin: 20px;
 
                 img {
                     width: $ancho-foto-producto-mobile;
@@ -68,24 +66,51 @@ body {
                         font-style: italic;
                     }
 
-                    .precioProducto {
+                    .accordion {
+                        margin: 0 auto;
+                    }
+
+                    .accordion-button {
+                        border-color: $colorPrincipal !important;
+                    }
+
+                    .listaDetalle {
+                        padding-right: 40px;
+                        font-style: italic;
+                    }
+
+                    li {
+                        list-style: none;
+                    }
+
+                    .detalleBold {
                         font-weight: 600;
-                        margin-bottom: 30px;
                     }
 
-                    a {
-                        text-decoration: none;
-                        color: #000;
-                        border: 1px solid $colorPrincipal;
-                        padding: 10px;
-                        border-radius: 10px;
+                    .containerPrecio {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: baseline;
+                        margin: 20px;
 
-                        &:hover {
+                        .precioProducto {
                             font-weight: 600;
-                            background-color: $colorPrincipal;
-                            box-shadow: $sombra-producto-hover;
                         }
-                    }
+
+                        a {
+                            text-decoration: none;
+                            color: #000;
+                            border: 1px solid $colorPrincipal;
+                            padding: 10px;
+                            border-radius: 10px;
+    
+                            &:hover {
+                                font-weight: 600;
+                                background-color: $colorPrincipal;
+                                box-shadow: $sombra-producto-hover;
+                            }
+                        }
+                    }                    
                 }
             }
         }
@@ -177,7 +202,6 @@ body {
 
                     .containerPrecio {
                         display: flex;
-                        flex-direction: row;
                         justify-content: space-around;
                         align-items: baseline;
                         margin: 20px;
