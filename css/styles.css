@@ -3,28 +3,36 @@
   /* SECCION DE NAVEGACION Y ENCABEZADO*/
   .navbar {
     background-color: #A0BCC2;
-    height: 80px; }
-  .navbar-brand {
-    text-decoration: none;
-    font-size: 23px;
-    letter-spacing: 2px; }
-    .navbar-brand:hover {
-      font-weight: 600;
-      color: #A0BCC2; }
-  .link-color {
-    color: #000 !important; }
-    .link-color:hover {
-      font-weight: 600;
-      color: #A0BCC2; }
-  .dropdown-menu {
-    background-color: #A0BCC2;
-    color: #000; }
-    .dropdown-menu:hover {
+    height: 60px; }
+    .navbar .navbar-brand {
+      text-decoration: none;
+      font-size: 23px;
+      letter-spacing: 2px; }
+      .navbar .navbar-brand:hover {
+        font-weight: 600;
+        color: #A0BCC2; }
+    .navbar .nav-link {
+      padding-left: 10px; }
+    .navbar .navbar-nav {
+      background-color: #A0BCC2;
+      padding: 10px; }
+    .navbar .link-color {
       color: #000 !important; }
-    .dropdown-menu .dropdown-item:hover {
-      font-weight: 600; }
-  .redSocialNav {
-    visibility: hidden; } }
+      .navbar .link-color:hover {
+        font-weight: 600;
+        color: #A0BCC2; }
+    .navbar .dropdown-menu {
+      background-color: #fff;
+      color: #000; }
+      .navbar .dropdown-menu:hover {
+        color: #000 !important; }
+      .navbar .dropdown-menu .dropdown-item {
+        padding-left: 30px; }
+        .navbar .dropdown-menu .dropdown-item:hover {
+          font-weight: 600;
+          background-color: #A0BCC2; }
+    .navbar .redSocialNav {
+      visibility: hidden; } }
 
 /* VISTA DESKTOP */
 @media only screen and (min-width: 1025px) {
@@ -81,6 +89,7 @@
       footer .containerFooter ul {
         list-style: none; }
         footer .containerFooter ul h4 {
+          font-weight: 600;
           letter-spacing: 2px;
           padding: 10px 10px 10px 0; }
         footer .containerFooter ul li {
@@ -92,6 +101,7 @@
             margin: 0 auto;
             text-decoration: none; }
           footer .containerFooter ul li span {
+            font-size: 15px;
             color: #000;
             padding-left: 10px; }
             footer .containerFooter ul li span:hover {
@@ -108,6 +118,7 @@
       footer .containerFooter .copyright {
         padding-top: 40px; }
         footer .containerFooter .copyright p {
+          font-size: 15px;
           text-align: center; }
       footer .containerFooter .by {
         padding-top: 15px;
@@ -173,7 +184,7 @@
       margin: 30px; }
       #infoCompra .info__container h3 {
         font-weight: 600;
-        font-size: 19px; } }
+        font-size: 16px; } }
 
 /* VISTA DESKTOP */
 @media only screen and (min-width: 1025px) {
@@ -201,12 +212,12 @@ body {
 /* VISTA MOBILE */
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   #productos {
-    margin-top: 80px;
+    margin-top: 60px;
     padding: 30px; }
     #productos .productos__titulo {
       text-align: center;
-      font-size: 30px;
-      margin-bottom: 20px;
+      font-size: 22px;
+      margin-bottom: 10px;
       letter-spacing: 3px;
       transition: letter-spacing 1.5s; }
       #productos .productos__titulo:hover {
@@ -214,13 +225,17 @@ body {
     #productos .productos__container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly;
-      margin: 40px; }
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      margin: 20px; }
       #productos .productos__container .container__productos {
         border: 2px solid #A0BCC2;
         border-radius: 10px;
         margin: 40px; }
         #productos .productos__container .container__productos img {
+          width: 300px;
+          height: 370px;
           border-radius: 10px; }
         #productos .productos__container .container__productos .foto-producto {
           width: 395px;

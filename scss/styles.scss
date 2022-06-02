@@ -14,13 +14,13 @@ body {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
 
     #productos {
-        margin-top: 80px;
+        margin-top: 60px;
         padding: 30px;
 
         .productos__titulo {
             text-align: center;
-            font-size: $size-H2Desktop;
-            margin-bottom: 20px;
+            font-size: $size-H2Mobile;
+            margin-bottom: 10px;
             letter-spacing: 3px;
             transition: letter-spacing 1.5s;
 
@@ -32,8 +32,10 @@ body {
         .productos__container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
-            margin: 40px;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            margin: 20px;
 
             .container__productos {
                 border: 2px solid $colorPrincipal;
@@ -41,6 +43,8 @@ body {
                 margin: 40px;
 
                 img {
+                    width: $ancho-foto-producto-mobile;
+                    height: $alto-foto-producto-mobile;
                     border-radius: 10px;
                 }
 

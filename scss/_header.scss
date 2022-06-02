@@ -5,46 +5,58 @@
 
     .navbar {
         background-color: $colorPrincipal;
-        height: 80px;
-    }
+        height: 60px;
 
-    .navbar-brand {
-        text-decoration: none;
-        font-size: 23px;
-        letter-spacing: 2px;
+        .navbar-brand {
+            text-decoration: none;
+            font-size: 23px;
+            letter-spacing: 2px;
 
-        &:hover {
-            font-weight: 600;
-            color: $colorPrincipal;
-        }
-    }
-
-    .link-color {
-        color: #000 !important;
-
-        &:hover {
-            font-weight: 600;
-            color: $colorPrincipal;
-        }
-    }
-
-    .dropdown-menu {
-        background-color: $colorPrincipal;
-        color: #000;
-
-        &:hover {
-            color: #000 !important;
-        }
-
-        .dropdown-item {
             &:hover {
                 font-weight: 600;
+                color: $colorPrincipal;
             }
         }
-    }
 
-    .redSocialNav {
-        visibility: hidden;
+        .nav-link {
+            padding-left: 10px;
+        }
+
+        .navbar-nav {
+            background-color: $colorPrincipal;
+            padding: 10px;
+        }
+
+        .link-color {
+            color: #000 !important;
+
+            &:hover {
+                font-weight: 600;
+                color: $colorPrincipal;
+            }
+        }
+
+        .dropdown-menu {
+            background-color: #fff;
+            color: #000;
+
+            &:hover {
+                color: #000 !important;
+            }
+
+            .dropdown-item {
+                padding-left: 30px;
+
+                &:hover {
+                    font-weight: 600;
+                    background-color: $colorPrincipal;
+                }
+            }
+        }
+
+        .redSocialNav {
+            visibility: hidden;
+        }
     }
 }
 
@@ -98,7 +110,7 @@
     }
 
     .redSocialNav {
-        
+
         ul {
             list-style: none;
             margin: auto 0;
