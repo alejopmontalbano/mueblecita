@@ -1,0 +1,100 @@
+// ARCHIVO CONTACTO
+@import "footer";
+
+/* VISTA MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    #contacto {
+        margin-top: 60px;
+        padding: 30px;
+
+        .contacto__titulo {
+            text-align: center;
+            font-size: $size-H2Mobile;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+            transition: letter-spacing 1.5s;
+
+            &:hover {
+                letter-spacing: 6px;
+            }
+        }
+
+        iframe {
+            box-shadow: $sombra-producto-hover;
+            width: 300px;
+            height: 400px;
+        }
+
+    }
+}
+
+
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+
+    #contacto {
+        margin-top: 80px;
+        padding: 30px;
+
+        .contacto__titulo {
+            text-align: center;
+            font-size: $size-H2Desktop;
+            margin-bottom: 40px;
+            letter-spacing: 3px;
+            transition: letter-spacing 1.5s;
+
+            &:hover {
+                letter-spacing: 6px;
+            }
+        }
+
+        #infoContacto {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .textoContacto {}
+
+            .detalleBold {
+                font-weight: 600;
+                font-size: 20px;
+            }
+
+            #horario-dudas {
+                margin: 40px;
+                padding-bottom: 30px;
+
+                a {
+                    color: #000;
+                    text-align: center;
+                    margin: 0 auto;
+                    text-decoration: none;
+
+                        &:hover {
+                            color: $colorPrincipal;
+                        }
+                }
+
+                img {
+                    width: $ancho-redes-fotos;
+                    height: $alto-redes-fotos;
+                    padding: 5px;
+                    border-radius: 10px;
+
+                        &:hover {
+                            background-color: $colorPrincipal;
+                        }
+                }
+
+            }
+
+            iframe {
+                box-shadow: $sombra-producto-hover;
+                margin-top: 40px;
+                width: 500px;
+                height: 400px;
+            }
+        }
+    }
+}

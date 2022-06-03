@@ -1,4 +1,4 @@
-@import "variables", "header", "footer", "infoCompra";
+@import "variables", "header", "footer", "infoCompra", "contacto";
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -166,14 +166,19 @@ body {
                     border-radius: 10px;
                 }
 
-                .imgCarousel {
-                    width: 350px !important;
-                    height: 420px;
-                }
-
                 .foto-producto {
                     width: 395px;
                     height: 315px;
+                }
+
+                .fotoGrande-silla {
+                    width: $ancho-foto-producto-desktop-silla;
+                    height: $alto-foto-producto-desktop-silla;
+                }
+
+                .fotoPlacard {
+                    width: $ancho-foto-producto-desktop-placard;
+                    height: $alto-foto-producto-desktop-placard;
                 }
 
                 &:hover {
