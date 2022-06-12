@@ -203,102 +203,6 @@
         font-weight: 600;
         font-size: 22px; } }
 
-/*FOOTER*/
-/* VISTA MOBILE */
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  footer {
-    background-color: #A0BCC2;
-    color: #000;
-    padding: 10px; }
-    footer .containerFooter {
-      display: flex;
-      flex-flow: column wrap;
-      padding-bottom: 10px; }
-      footer .containerFooter ul {
-        list-style: none; }
-        footer .containerFooter ul h4 {
-          font-weight: 600;
-          letter-spacing: 2px;
-          padding: 10px 10px 10px 0; }
-        footer .containerFooter ul li {
-          margin: 8px; }
-          footer .containerFooter ul li:hover {
-            color: #DAE5D0; }
-          footer .containerFooter ul li a {
-            text-align: center;
-            margin: 0 auto;
-            text-decoration: none; }
-          footer .containerFooter ul li span {
-            font-size: 15px;
-            color: #000;
-            padding-left: 10px; }
-            footer .containerFooter ul li span:hover {
-              color: #DAE5D0; }
-          footer .containerFooter ul li img {
-            width: 30px;
-            height: 30px;
-            padding: 5px;
-            border-radius: 10px; }
-      footer .containerFooter .logoRed:hover {
-        background-color: #DAE5D0; }
-      footer .containerFooter .fotoContactanos:hover {
-        background-color: #DAE5D0; }
-      footer .containerFooter .copyright {
-        padding-top: 40px; }
-        footer .containerFooter .copyright p {
-          font-size: 15px;
-          text-align: center; }
-      footer .containerFooter .by {
-        padding-top: 15px;
-        font-weight: bold !important; } }
-
-/* VISTA DESKTOP */
-@media only screen and (min-width: 1025px) {
-  footer {
-    background-color: #A0BCC2;
-    color: #000;
-    padding: 10px; }
-    footer .containerFooter {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding-bottom: 10px; }
-      footer .containerFooter ul {
-        list-style: none; }
-        footer .containerFooter ul h4 {
-          font-size: 22px;
-          letter-spacing: 2px;
-          padding: 10px 10px 10px 0; }
-        footer .containerFooter ul li {
-          margin: 8px; }
-          footer .containerFooter ul li:hover {
-            color: #DAE5D0; }
-          footer .containerFooter ul li a {
-            text-align: center;
-            margin: 0 auto;
-            text-decoration: none; }
-          footer .containerFooter ul li span {
-            color: #000;
-            padding-left: 10px; }
-            footer .containerFooter ul li span:hover {
-              color: #DAE5D0; }
-          footer .containerFooter ul li img {
-            width: 30px;
-            height: 30px;
-            padding: 5px;
-            border-radius: 10px; }
-      footer .containerFooter .logoRed:hover {
-        background-color: #DAE5D0; }
-      footer .containerFooter .fotoContactanos:hover {
-        background-color: #DAE5D0; }
-      footer .containerFooter .copyright {
-        padding-top: 40px; }
-        footer .containerFooter .copyright p {
-          text-align: center; }
-      footer .containerFooter .by {
-        padding-top: 15px;
-        font-weight: bold !important; } }
-
 /* VISTA MOBILE */
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   #contacto {
@@ -307,15 +211,47 @@
     #contacto .contacto__titulo {
       text-align: center;
       font-size: 22px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       letter-spacing: 3px;
       transition: letter-spacing 1.5s; }
       #contacto .contacto__titulo:hover {
         letter-spacing: 6px; }
-    #contacto iframe {
-      box-shadow: 0px 0px 25px 9px #A0BCC2;
-      width: 300px;
-      height: 400px; } }
+    #contacto #infoContacto {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center; }
+      #contacto #infoContacto .textoContacto {
+        display: flex;
+        flex-flow: column wrap; }
+        #contacto #infoContacto .textoContacto .horario-dudas {
+          margin: 20px;
+          padding-bottom: 30px; }
+          #contacto #infoContacto .textoContacto .horario-dudas .dudas-redes {
+            text-align: center; }
+          #contacto #infoContacto .textoContacto .horario-dudas .detalleBold {
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px; }
+          #contacto #infoContacto .textoContacto .horario-dudas p {
+            text-align: center; }
+          #contacto #infoContacto .textoContacto .horario-dudas a {
+            color: #000;
+            text-align: center;
+            margin: 0 auto;
+            text-decoration: none; }
+            #contacto #infoContacto .textoContacto .horario-dudas a:hover {
+              color: #A0BCC2; }
+          #contacto #infoContacto .textoContacto .horario-dudas img {
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+            border-radius: 10px; }
+            #contacto #infoContacto .textoContacto .horario-dudas img:hover {
+              background-color: #A0BCC2; }
+      #contacto #infoContacto iframe {
+        box-shadow: 0px 0px 25px 9px #A0BCC2;
+        width: 250px;
+        height: 350px; } }
 
 /* VISTA DESKTOP */
 @media only screen and (min-width: 1025px) {
@@ -337,28 +273,78 @@
       #contacto #infoContacto .detalleBold {
         font-weight: 600;
         font-size: 20px; }
-      #contacto #infoContacto #horario-dudas {
+      #contacto #infoContacto .horario-dudas {
         margin: 40px;
         padding-bottom: 30px; }
-        #contacto #infoContacto #horario-dudas a {
+        #contacto #infoContacto .horario-dudas a {
           color: #000;
           text-align: center;
           margin: 0 auto;
           text-decoration: none; }
-          #contacto #infoContacto #horario-dudas a:hover {
+          #contacto #infoContacto .horario-dudas a:hover {
             color: #A0BCC2; }
-        #contacto #infoContacto #horario-dudas img {
+        #contacto #infoContacto .horario-dudas img {
           width: 30px;
           height: 30px;
           padding: 5px;
           border-radius: 10px; }
-          #contacto #infoContacto #horario-dudas img:hover {
+          #contacto #infoContacto .horario-dudas img:hover {
             background-color: #A0BCC2; }
       #contacto #infoContacto iframe {
         box-shadow: 0px 0px 25px 9px #A0BCC2;
         margin-top: 40px;
         width: 500px;
         height: 400px; } }
+
+/* VISTA MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #politicas {
+    margin-top: 60px;
+    padding: 30px; }
+    #politicas .politicas__titulo {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 40px;
+      letter-spacing: 3px;
+      transition: letter-spacing 1.5s; }
+      #politicas .politicas__titulo:hover {
+        letter-spacing: 6px; }
+    #politicas .accordion {
+      box-shadow: 0px 0px 25px 9px #A0BCC2; }
+    #politicas .accordion-item {
+      padding: 10px; }
+      #politicas .accordion-item button {
+        font-weight: 600; }
+      #politicas .accordion-item span {
+        font-weight: 600; }
+      #politicas .accordion-item ul {
+        list-style: none; } }
+
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+  #politicas {
+    margin-top: 80px;
+    padding: 30px; }
+    #politicas .politicas__titulo {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 40px;
+      letter-spacing: 3px;
+      transition: letter-spacing 1.5s; }
+      #politicas .politicas__titulo:hover {
+        letter-spacing: 6px; }
+    #politicas .accordion {
+      width: 75%;
+      margin: 0 auto;
+      box-shadow: 0px 0px 25px 9px #A0BCC2; }
+    #politicas .accordion-item {
+      padding: 20px; }
+      #politicas .accordion-item button {
+        font-weight: 600; }
+      #politicas .accordion-item span {
+        font-weight: 600; }
+      #politicas .accordion-item ul {
+        list-style: none; } }
 
 * {
   font-family: 'Montserrat', sans-serif;

@@ -1,0 +1,85 @@
+// ARCHIVO CONTACTO
+
+/* VISTA MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    #politicas {
+        margin-top: 60px;
+        padding: 30px;
+
+        .politicas__titulo {
+            text-align: center;
+            font-size: $size-H2Mobile;
+            margin-bottom: 40px;
+            letter-spacing: 3px;
+            transition: letter-spacing 1.5s;
+
+            &:hover {
+                letter-spacing: 6px;
+            }
+        }
+
+        .accordion {
+            box-shadow: $sombra-producto-hover;
+        }
+
+        .accordion-item {
+            padding: 10px;
+
+                button {
+                    font-weight: 600;
+                }
+
+                span {
+                    font-weight: 600;
+                }
+
+                ul {
+                    list-style: none;
+                }
+        }
+    }
+}
+
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1025px) {
+
+    #politicas {
+        margin-top: 80px;
+        padding: 30px;
+
+        .politicas__titulo {
+            text-align: center;
+            font-size: $size-H2Desktop;
+            margin-bottom: 40px;
+            letter-spacing: 3px;
+            transition: letter-spacing 1.5s;
+
+            &:hover {
+                letter-spacing: 6px;
+            }
+        }
+
+        .accordion {
+            width: 75%;
+            margin: 0 auto;
+            box-shadow: $sombra-producto-hover;
+        }
+
+        .accordion-item {
+            padding: 20px;
+
+                button {
+                    font-weight: 600;
+                }
+
+                span {
+                    font-weight: 600;
+                }
+
+                ul {
+                    list-style: none;
+                }
+        }
+    }
+}

@@ -1,5 +1,4 @@
 // ARCHIVO CONTACTO
-@import "footer";
 
 /* VISTA MOBILE */
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -11,7 +10,7 @@
         .contacto__titulo {
             text-align: center;
             font-size: $size-H2Mobile;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             letter-spacing: 3px;
             transition: letter-spacing 1.5s;
 
@@ -20,12 +19,65 @@
             }
         }
 
-        iframe {
-            box-shadow: $sombra-producto-hover;
-            width: 300px;
-            height: 400px;
-        }
+        #infoContacto {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
 
+            .textoContacto {
+                display: flex;
+                flex-flow: column wrap;
+
+
+                .horario-dudas {
+                    margin: 20px;
+                    padding-bottom: 30px;
+
+                    .dudas-redes {
+                        text-align: center;
+                    }
+    
+                    .detalleBold {
+                        text-align: center;
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+
+                    p {
+                        text-align: center;
+                    }
+    
+                    a {
+                        color: #000;
+                        text-align: center;
+                        margin: 0 auto;
+                        text-decoration: none;
+    
+                            &:hover {
+                                color: $colorPrincipal;
+                            }
+                    }
+    
+                    img {
+                        width: $ancho-redes-fotos;
+                        height: $alto-redes-fotos;
+                        padding: 5px;
+                        border-radius: 10px;
+    
+                            &:hover {
+                                background-color: $colorPrincipal;
+                            }
+                    }
+    
+                }
+            }
+
+            iframe {
+                box-shadow: $sombra-producto-hover;
+                width: 250px;
+                height: 350px;
+            }
+        }
     }
 }
 
@@ -54,14 +106,12 @@
             flex-wrap: wrap;
             justify-content: space-around;
 
-            .textoContacto {}
-
             .detalleBold {
                 font-weight: 600;
                 font-size: 20px;
             }
 
-            #horario-dudas {
+            .horario-dudas {
                 margin: 40px;
                 padding-bottom: 30px;
 
