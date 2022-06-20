@@ -59,8 +59,15 @@
         }
     }
 
-    .redSocialNav {
-        visibility: hidden;
+    .carrito {
+        display: flex;
+
+        img {
+            width: $ancho-redes-fotos;
+            height: $alto-redes-fotos;
+            padding: 5px;
+            border-radius: 10px;
+        }
     }
 
 }
@@ -114,27 +121,16 @@
         }
     }
 
-    .redSocialNav {
+    .carrito {
+        display: flex;
+        margin-right: 20px;
+        align-items: center;
 
-        ul {
-            list-style: none;
-            margin: auto 0;
-
-            .redesNav {
-                display: inline-block;
-
-                img {
-                    width: $ancho-redes-fotos;
-                    height: $alto-redes-fotos;
-                    padding: 5px;
-                    margin: 0 10px;
-                    border-radius: 10px;
-
-                    &:hover {
-                        background-color: $colorSecundario;
-                    }
-                }
-            }
+        img {
+            width: $ancho-redes-fotos;
+            height: $alto-redes-fotos;
+            padding: 5px;
+            border-radius: 10px;
         }
     }
 }

@@ -116,14 +116,14 @@ body {
                             border: 1px solid $colorPrincipal;
                             padding: 10px;
                             border-radius: 10px;
-    
+
                             &:hover {
                                 font-weight: 600;
                                 background-color: $colorPrincipal;
                                 box-shadow: $sombra-producto-hover;
                             }
                         }
-                    }                    
+                    }
                 }
             }
         }
@@ -221,13 +221,26 @@ body {
                     .containerPrecio {
                         display: flex;
                         justify-content: space-around;
-                        align-items: baseline;
+                        align-items: center;
                         margin: 20px;
+                    }
+
+                    .compra {
+                        display: flex;
+                        align-items: center;
                     }
 
                     .precioProducto {
                         font-weight: 600;
                         font-size: 19px;
+                        margin-bottom: 0;
+                    }
+
+                    .carrito-producto {
+                        width: $ancho-redes-fotos;
+                        height: $alto-redes-fotos;
+                        padding: 5px;
+                        margin-left: 10px;
                     }
 
                     a {

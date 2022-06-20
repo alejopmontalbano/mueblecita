@@ -33,8 +33,13 @@
       .dropdown-menu .dropdown-item:hover {
         font-weight: 600;
         background-color: #A0BCC2; }
-  .redSocialNav {
-    visibility: hidden; } }
+  .carrito {
+    display: flex; }
+    .carrito img {
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      border-radius: 10px; } }
 
 /* VISTA DESKTOP */
 @media only screen and (min-width: 1025px) {
@@ -63,19 +68,15 @@
       color: #000 !important; }
     .dropdown-menu .dropdown-item:hover {
       font-weight: 600; }
-  .redSocialNav ul {
-    list-style: none;
-    margin: auto 0; }
-    .redSocialNav ul .redesNav {
-      display: inline-block; }
-      .redSocialNav ul .redesNav img {
-        width: 30px;
-        height: 30px;
-        padding: 5px;
-        margin: 0 10px;
-        border-radius: 10px; }
-        .redSocialNav ul .redesNav img:hover {
-          background-color: #DAE5D0; } }
+  .carrito {
+    display: flex;
+    margin-right: 20px;
+    align-items: center; }
+    .carrito img {
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      border-radius: 10px; } }
 
 /*FOOTER*/
 /* VISTA MOBILE */
@@ -483,11 +484,20 @@ body {
         #productos .productos__container .container__productos .descripcionProductos .containerPrecio {
           display: flex;
           justify-content: space-around;
-          align-items: baseline;
+          align-items: center;
           margin: 20px; }
+        #productos .productos__container .container__productos .descripcionProductos .compra {
+          display: flex;
+          align-items: center; }
         #productos .productos__container .container__productos .descripcionProductos .precioProducto {
           font-weight: 600;
-          font-size: 19px; }
+          font-size: 19px;
+          margin-bottom: 0; }
+        #productos .productos__container .container__productos .descripcionProductos .carrito-producto {
+          width: 30px;
+          height: 30px;
+          padding: 5px;
+          margin-left: 10px; }
         #productos .productos__container .container__productos .descripcionProductos a {
           text-decoration: none;
           color: #000;
