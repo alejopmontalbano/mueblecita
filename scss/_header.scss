@@ -8,9 +8,9 @@
         height: 60px;
     }
 
-    .container-fluid {
-        height: 60px;
-    }
+    /* .container-fluid {
+        height: 61px;
+    } */
 
     .navbar-brand {
         text-decoration: none;
@@ -61,6 +61,8 @@
 
     .carrito {
         display: flex;
+        position: absolute;
+        visibility: hidden;
 
         img {
             width: $ancho-redes-fotos;

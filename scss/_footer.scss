@@ -11,6 +11,8 @@
         .containerFooter {
             display: flex;
             flex-flow: column wrap;
+            align-items: baseline;
+            align-content: center;
             padding-bottom: 10px;
 
             ul {

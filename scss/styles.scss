@@ -103,11 +103,19 @@ body {
                     .containerPrecio {
                         display: flex;
                         justify-content: space-around;
-                        align-items: baseline;
+                        align-items: center;
                         margin: 20px 0;
 
                         .precioProducto {
                             font-weight: 600;
+                            margin: 0;
+                        }
+                        
+                        .carrito-producto {
+                            width: $ancho-redes-fotos;
+                            height: $alto-redes-fotos;
+                            padding: 5px;
+                            margin-left: 10px;
                         }
 
                         a {
